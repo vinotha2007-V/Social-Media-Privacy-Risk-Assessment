@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Risk Assessment | PRAF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="brand">PR<span>AF</span></a>
+        <div class="nav-label">CYBERSECURITY · PRIVACY CENTER</div>
+        <div class="status"><span></span> SYSTEM READY</div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="eyebrow">PERSONAL PRIVACY INTELLIGENCE</div>
+            <h1>Understand your<br><span>digital footprint.</span></h1>
+            <p>Assess your social media privacy habits, discover risk areas, and receive practical recommendations to protect your digital identity.</p>
+        </section>
+
+        <section class="intro-grid">
+            <div class="panel welcome">
+                <div class="icon-box">◈</div>
+                <h2>Your Privacy, Your Control</h2>
+                <p>Complete this self-assessment to understand your privacy habits. This educational demo uses your answers and does not access social media accounts.</p>
+                <div class="features">
+                    <span>✓ Privacy awareness</span>
+                    <span>✓ Risk analysis</span>
+                    <span>✓ Actionable guidance</span>
+                </div>
+            </div>
+
+            <div class="panel summary">
+                <div class="panel-heading">ASSESSMENT OVERVIEW</div>
+                <div class="summary-number">10 <small>questions</small></div>
+                <p>Across privacy and account safety topics</p>
+                <div class="progress-track"><div></div></div>
+                <div class="summary-bottom">
+                    <span>Estimated time</span>
+                    <strong>2–3 min</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel assessment">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">STEP 01 / SELF-ASSESSMENT</div>
+                    <h2>Review your privacy habits</h2>
+                </div>
+                <span id="question-count" class="question-count">0 / 10 answered</span>
+            </div>
+
+            <p class="helper">Select the option that best describes your current habits. Higher values represent potentially higher privacy risk in this demo.</p>
+
+            <form id="assessment-form">
+                <div id="questions"></div>
+                <button type="submit" id="submit-button">Analyze My Privacy Risk <span>→</span></button>
+            </form>
+            <div id="message" role="status"></div>
+        </section>
+
+        <section class="panel results hidden" id="results">
+            <div class="eyebrow">YOUR ASSESSMENT RESULTS</div>
+            <h2>Privacy Risk Overview</h2>
+
+            <div class="result-score">
+                <div class="score-circle" id="score-circle">
+                    <strong id="risk-score">0</strong>
+                    <span>/ 100</span>
+                </div>
+                <div>
+                    <div class="panel-heading">OVERALL RISK LEVEL</div>
+                    <h3 id="risk-level">—</h3>
+                    <p id="result-description"></p>
+                </div>
+            </div>
+
+            <div class="category-section">
+                <div class="eyebrow">PRIVACY BREAKDOWN</div>
+                <h3>Category Risk Analysis</h3>
+                <p class="helper">Review the estimated risk score for each privacy category.</p>
+                <div id="category-cards" class="category-grid"></div>
+            </div>
+
+            <div class="recommendation-section">
+                <div class="eyebrow">YOUR ACTION PLAN</div>
+                <h3>Privacy Recommendations</h3>
+                <ul id="recommendations"></ul>
+            </div>
+
+            <button type="button" class="secondary-button" id="retry-button">Retake Assessment ↻</button>
+        </section>
+
+        <footer>
+            <span>PR<span class="footer-accent">AF</span> · Privacy Risk Assessment Framework</span>
+            <span>EDUCATIONAL DEMO · NO SOCIAL ACCOUNT ACCESS</span>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
